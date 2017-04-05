@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="system.mil.kamuspengecatanotomotif.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@android:drawable/edit_text"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/searchotomotif"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white100"
+                android:hint="Masukkan kata"
+                android:inputType="text"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listviewotomotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            android:fadingEdgeLength="48sp"
+            android:requiresFadingEdge="vertical" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
