@@ -27,6 +27,7 @@
         <activity android:hardwareAccelerated="false" android:name=".HelpActivity" android:label="Help" android:screenOrientation="portrait" android:parentActivityName=".MainActivity"/>
         <activity android:hardwareAccelerated="false" android:name=".BibliographyActivity" android:label="Reference" android:screenOrientation="portrait" android:parentActivityName=".MainActivity"/>
         <activity android:name=".DetailActivity" android:label="Detail Kata" android:screenOrientation="portrait" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ImageViewerActivity" android:label="Detail Kata" android:screenOrientation="portrait" android:parentActivityName=".DetailActivity" android:theme="@style/AppTheme.FullScreen"/>
     </application>
 
 </manifest>

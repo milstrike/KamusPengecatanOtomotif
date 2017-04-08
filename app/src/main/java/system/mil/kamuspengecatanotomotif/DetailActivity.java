@@ -96,6 +96,11 @@ public class DetailActivity extends AppCompatActivity implements
         return super.onOptionsItemSelected(item);
     }
 
+    public void goToPenampilGambar(View v){
+        Intent i = new Intent(DetailActivity.this, ImageViewerActivity.class);
+        startActivity(i);
+    }
+
     public void berbagi(){
         String shareBody = "\n" + kata + "\n\n" + detail + "\n\n[Kamus Pengecatan Otomotif]";
         Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
